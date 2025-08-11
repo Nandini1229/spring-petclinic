@@ -1,4 +1,4 @@
-FROM maven:3.9.11-eclipse-temurin-17-temurin AS build
+FROM maven:3.9.11-eclipse-temurin-17 AS build
 #RUN apk  add  --no-cache git
 RUN git clone https://github.com/Nandini1229/spring-petclinic.git && \ 
     cd spring-petclinic && \ 
