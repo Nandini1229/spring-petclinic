@@ -1,7 +1,7 @@
 FROM maven:3.9.11-eclipse-temurin-17-alpine AS build
 RUN apk  add  --no-cache git
 RUN git clone git@github.com:Nandini1229/spring-petclinic.git \ 
-    cd spring-petclinic && \ 
+    cmd spring-petclinic && \ 
     && .mvn package
 FROM openjdk:25-ea-17-jdk AS run 
 RUN adduser -D -h /usr/share/demO -s/bin/bash nandana user
