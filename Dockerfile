@@ -1,5 +1,5 @@
-FROM maven:3.9.11-eclipse-temurin-17-alpine as build
-RUN apk install git 
+FROM maven:3.9.11-eclipse-temurin-17-alpine AS build
+RUN apk  add  
 RUN git clone git@github.com:Nandini1229/spring-petclinic.git   
            cd spring-petclinic &&
            mvn package
