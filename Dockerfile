@@ -10,6 +10,6 @@ FROM eclipse-temurin:17-jre-alpine AS run
 RUN adduser -D -h /usr/share/demo -s/bin/sh nandana 
 USER nandana 
 WORKDIR /usr/share/demo 
-COPY --from=build /spring-petclini/target/*.jar app.jar
+COPY --from=build /spring-petclinic/target/*.jar app.jar
 EXPOSE 8080/tcp
 CMD ["java","-jar","app.jar"]
