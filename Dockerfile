@@ -13,3 +13,5 @@ WORKDIR /usr/share/demo
 COPY --from=build /spring-petclinic/target/*.jar app.jar
 EXPOSE 8080/tcp
 CMD ["java","-jar","app.jar"]
+
+#hiii
